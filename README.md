@@ -17,5 +17,7 @@ python index.py
 
 ![snapshots.png](https://github.com/Yigehaoren8848/live/blob/master/ysp/snapshorts/snapshots.png)
 
+如果对你有帮助,请添加一个星标吧！
+
 
 **免责声明：代码仅供学习以及参考使用，切勿用作商业用途，否则后果自负！**
