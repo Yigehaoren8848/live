@@ -203,7 +203,7 @@ def ysp(pid,vid):
 
 if __name__ == '__main__':
 
-    vid = input("请输入vid \n")
+    vid = input("请输入vid,vid请到ysp/ysp_utils/channel.txt参考，例如CCTV4K:2022575203 \n")
     ysp("600002475", vid)
 
 

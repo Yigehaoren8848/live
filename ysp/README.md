@@ -15,6 +15,8 @@ python index.py
 
 已解决视频播放到5分钟后断流的问题。
 
+关于付费节目CCTV兵器世界可以收看，其他还没测试！
+
 ![snapshots.png](https://github.com/Yigehaoren8848/live/blob/master/ysp/snapshorts/snapshots.png)
 
 如果对你有帮助,请添加一个星标吧！
