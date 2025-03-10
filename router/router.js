@@ -3,13 +3,11 @@ const router = express.Router();
 
 const { get_real_link } = require('../migu/index')
 const { get_yy_real_link } = require('../yy/index')
-const { get_rael_url } = require('../ysp/testwasm2')
 const { get_real_url } = require('../hebeitv/index')
 const { get_jilin_liveinfo } = require('../jilintv/index')
 const { get_shanxi_liveinfo } = require('../shanxitv/index')
 const { get_neimenggu_liveinfo } = require('../neimenggutv/index')
 const { getHuyaUrl } = require('../huya/taobao')
-const {get_ifengliurl} = require('../ifengli/index')
 
 // 主页路由
 router.get('/', (req, res) => {
@@ -90,16 +88,9 @@ router.get('/stv/:province/:room_id', async (req, res) => {
           break
         }
         default: {
-          const ip = 'cc2025-ynbit.ifengli.com:2000';
           
           
-          
-          let m3u8 =  get_ifengliurl(ip,contId);
-          res.set('access-control-allow-origin', `*`);
-          res.set('Content-Disposition', `inline; filename=${contId}.m3u8`);
-          res.set('Content-Type', 'application/vnd.apple.mpegurl');
-          
-          res.send(m3u8);
+          res.send("m3u8");
           
         }
       }
