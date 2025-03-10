@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { get_real_link } = require('../migu/index')
+// const { get_real_link } = require('../migu/index')
 const { get_yy_real_link } = require('../yy/index')
 const { get_real_url } = require('../hebeitv/index')
 const { get_jilin_liveinfo } = require('../jilintv/index')
@@ -26,10 +26,10 @@ router.get('/ysp/:room_id', async (req, res) => {
 
 router.get('/migu/:room_id', async (req, res) => {
   try {
-    const contId = req.params.room_id;
-    res.setHeader('Content-Type', 'text/plain');
-    let data_ = await get_real_link(contId);
-    res.send(data_);
+    // const contId = req.params.room_id;
+    // res.setHeader('Content-Type', 'text/plain');
+    // let data_ = await get_real_link(contId);
+    // res.send(data_);
   } catch (e) {
     console.log("**************************", e)
     res.send({ "msg": e.message });

@@ -203,7 +203,7 @@ function S(t) {
 }
 
 var wasmExports;
-const wasmFile =  require.resolve("./migu/playurl-crypto.wasm")
+const wasmFile = "./migu/playurl-crypto.wasm"
 const wbgObj = B();
 let wasmInstance = null; // 用于缓存 WebAssembly 实例
 
